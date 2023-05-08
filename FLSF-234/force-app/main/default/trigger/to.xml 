@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trigger>
+  <name>Lookup Master Module</name>
+  <description>This trigger is used to manage the Lookup Master module.</description>
+  <condition>
+    <type>event</type>
+    <event>
+      <name>system_admin_panel_access</name>
+      <description>Event triggered when a user with admin privileges accesses the system administration panel.</description>
+    </event>
+  </condition>
+  <actions>
+    <action>
+      <name>display_lookup_master_module</name>
+      <description>Display the Lookup Master module.</description>
+    </action>
+    <action>
+      <name>display_list_masters</name>
+      <description>Display a list of all the pre-defined masters available, including their type (independent or dependent).</description>
+    </action>
+    <action>
+      <name>create_master</name>
+      <description>Allow for the creation of new masters, with the option to specify whether they are independent or dependent on another master.</description>
+    </action>
+    <action>
+      <name>add_record_master</name>
+      <description>Allow for the addition of new records to existing masters.</description>
+    </action>
+    <action>
+      <name>delete_record_master</name>
+      <description>Allow for the deletion of existing records from a master.</description>
+    </action>
+    <action>
+      <name>enforce_dependent_master_rule</name>
+      <description>Enforce the rule that dependent masters can only be created once the corresponding independent master has been set up.</description>
+    </action>
+    <action>
+      <name>update_masters_reflection</name>
+      <description>Ensure that any updates made to a master or its records are immediately reflected across the application where the master is used.</description>
+    </action>
+    <action>
+      <name>search_filter_masters</name>
+      <description>Provide the ability to search and filter the list of masters by name or type.</description>
+    </action>
+    <action>
+      <name>view_list_records_master</name>
+      <description>Provide the ability to view the list of records for each master and allow for pagination if the list is long.</description>
+    </action>
+    <action>
+      <name>maintain_master_data_security</name>
+      <description>Ensure that the data in the master is maintained in a secure and scalable manner.</description>
+    </action>
+  </actions>
+</trigger>
