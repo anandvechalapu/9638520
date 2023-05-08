@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trigger>
+  <name>Integration With External System</name>
+  <description>Integrate the system with external systems such as NSDL for PAN, E-Feap for channel management and commission payment, Bank for NEFT payment, and ONGC for data exchange.</description>
+  <condition>
+    <!-- NSDL System for PAN Integration -->
+    <condition name="Send Requests to NSDL System to Verify and Fetch PAN Details" type="boolean" value="true"/>
+    <condition name="Retrieve and Store the PAN Details" type="boolean" value="true"/>
+    <condition name="PAN Details Obtained Should be Accurate and Up-to-Date" type="boolean" value="true"/>
+    <condition name="Integration Should Comply with NSDL's API Specifications and Security Protocols" type="boolean" value="true"/>
+    <!-- API Integration with E-Feap System -->
+    <condition name="Send Requests to E-Feap System for Commission Payment and Channel Management" type="boolean" value="true"/>
+    <condition name="Receive and Process Commission Payment and Channel Management Data from E-Feap System" type="boolean" value="true"/>
+    <condition name="Integration Should Comply with E-Feap's API Specifications and Security Protocols" type="boolean" value="true"/>
+    <condition name="Commission Payment and Channel Management Data Obtained Should be Accurate and Up-to-Date" type="boolean" value="true"/>
+    <!-- Integration with Bank for NEFT Payment -->
+    <condition name="Send NEFT Payment Requests to the Bank" type="boolean" value="true"/>
+    <condition name="Retrieve and Store NEFT Payment Transaction Details from the Bank" type="boolean" value="true"/>
+    <condition name="Integration Should Comply with the Bank's API Specifications and Security Protocols" type="boolean" value="true"/>
+    <condition name="NEFT Payment Transaction Details Obtained Should be Accurate and Up-to-Date" type="boolean" value="true"/>
+    <!-- Integration with ONGC -->
+    <condition name="Send Data Requests to ONGC System for Data Exchange" type="boolean" value="true"/>
+    <condition name="Receive and Process Data from ONGC System" type="boolean" value="true"/>
+    <condition name="Integration Should Comply with ONGC's API Specifications and Security Protocols" type="boolean" value="true"/>
+    <condition name="Data Obtained Should be Accurate and Up-to-Date" type="boolean" value="true"/>
+    <!-- Overall System Integration -->
+    <condition name="Able to Handle Multiple External System Integrations Concurrently" type="boolean" value="true"/>
+    <condition name="Able to Handle Errors and Exceptions in the External System Integrations" type="boolean" value="true"/>
+    <condition name="Able to Maintain Data Consistency and Integrity Across All Integrated Systems" type="boolean" value="true"/>
+    <condition name="Integration Should Comply with All Relevant Regulatory and Compliance Requirements" type="boolean" value="true"/>
+  </condition>
+  <action>
+    <!-- NSDL System for PAN Integration -->
+    <action name="Send Requests to NSDL System to Verify and Fetch PAN Details" type="script"/>
+    <action name="Retrieve and Store the PAN Details" type="script"/>
+    <action name="Integration Should Comply with NSDL's API Specifications and Security Protocols" type="script"/>
+    <!-- API Integration with E-Feap System -->
+    <action name="Send Requests to E-Feap System for Commission Payment and Channel Management" type="script"/>
+    <action name="Receive and Process Commission Payment and Channel Management Data from E-Feap System" type="script"/>
+    <action name="Integration Should Comply with E-Feap's API Specifications and Security Protocols" type="script"/>
+    <action name="Commission Payment and Channel Management Data Obtained Should be Accurate and Up-to-Date" type="script"/>
+    <!-- Integration with Bank for NEFT Payment -->
+    <action name="Send NEFT Payment Requests to the Bank" type="script"/>
+    <action name="Retrieve and Store NEFT Payment Transaction Details from the Bank" type="script"/>
+    <action name="Integration Should Comply with the Bank's API Specifications and Security Protocols" type="script"/>
+   
